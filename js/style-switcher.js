@@ -43,10 +43,4 @@ audioToggle.addEventListener('click', () => {
 
     document.querySelector("#myAudio").paused ? document.querySelector("#myAudio").play() : document.querySelector("#myAudio").pause();
 });
-// Mở nhạc sau khi web load
-document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(function() {
-      document.querySelector("#myAudio").play();
-    }, 100);
-});
   
