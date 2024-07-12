@@ -549,7 +549,7 @@ h3.my-profession{
     /* Các thuộc tính CSS khác để tùy chỉnh vị trí và giao diện của tooltip.
 } */
 #audio-player {
-    display: none; /* Ẩn trình phát âm thanh */
+    display: flex; /* Ẩn trình phát âm thanh */
   }
 @media (max-width:1199px){
     .section .container{
