@@ -43,8 +43,3 @@ audioToggle.addEventListener('click', () => {
 
     document.querySelector("#myAudio").paused ? document.querySelector("#myAudio").play() : document.querySelector("#myAudio").pause();
 });
-document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(function() {
-  document.querySelector("#myAudio").play();
-}, 500);
-});
