@@ -331,7 +331,7 @@ h3.my-profession{
     font-size: 20px;
     color: var(--text-black-700);
 }
-/* home */
+
 .home .home-img{
     flex: 0 0 37%;
     max-width: 40%;
@@ -421,12 +421,326 @@ h3.my-profession{
     max-width: 40%;
     margin-top: 40px;
 }
+.about .about-content .skills .row{
+    justify-content: center;
+    font-size: 15px;
+}
+.about .about-content .skills .skill-item{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about .about-content .skills .skill-item h5{
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+}
+.cre-source h5{
+    line-height: 25px !important;
+}
+.about .about-content .skills .skill-item .progress{
+    height: 7px;
+    background: var(--bg-black-50);
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+}
+.about .about-content .skills .skill-item{
+    margin-bottom: 20px;
+}
+.about .about-content .skills .skill-item .progress-in{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    border-radius: 4px;
+    background-color: var(--skin-color);
+}
+.about .about-content .skills .skill-item .skill-percent{
+    position: absolute;
+    right: 0;
+    color: var(--text-black-900);
+    top: -40px;
+    font-weight: 400;
+    line-height: 40px;
+}
+.about .about-content .education, .about .about-content .experience{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 30px;
+}
+.about .about-content h3.title{
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: var(--text-black-900);
+}
+.about .about-content .timeline-box{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about .about-content .timeline{
+    background-color: var(--bg-black-100);
+    padding: 30px 15px;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+.about .about-content .timeline .timeline-item{
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
+}
+.about .about-content .timeline .timeline-item:last-child{
+    padding-bottom: 0;
+}
+.about .about-content .timeline .timeline-item::before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    background-color: var(--skin-color);
+}
+.about .about-content .timeline .circle-dot{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--skin-color);
+}
+.about .about-content .timeline .timeline-date{
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: var(--text-black-700);
+}
+.about .about-content .timeline .timeline-date .fa{
+    margin-right: 5px;
+}
+.about .about-content .timeline .timeline-title{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: var(--text-black-900);
+}
+.about .about-content .timeline .timeline-text{
+    font-size: 16px;
+    line-height: 25px;
+    text-align: justify;
+    color: var(--text-black-700);
+}
 .iframe{
     border: none;
     margin-top: 20px;
 }
-.about {
-    display: flex; /* Ẩn trình phát âm thanh */
+/* services */
+.service .container{
+    padding-bottom: 40px;
+}
+.service .service-item{
+    margin-bottom: 30px;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+.service .service-item .service-item-inner{
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    padding: 30px 15px;
+    text-align: center;
+    transition: all 0.3S ease;
+}
+.service .service-item .service-item-inner p{
+    text-align: left;
+}
+.service .service-item .service-item-inner:hover{
+    box-shadow: 0 0 20px rgba(48,46,77,0.15);
+}
+.service .service-item .service-item-inner .icon{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.service .service-item .service-item-inner .iconnf img{
+    width: 40px;
+    height: 40px;
+    margin-top: 13px;
+}
+.service .service-item .service-item-inner .icon .fa-solid,
+.service .service-item .service-item-inner .icon .fa-brands {
+    font-size: 40px;
+    line-height: 60px;
+    color: var(--skin-color);
+    transition: all 0.3S ease;
+}
+.service .service-item .service-item-inner:hover .icon{
+    background: var(--skin-color);
+}
+.service .service-item .service-item-inner:hover .icon .fa-solid,
+.service .service-item .service-item-inner:hover .icon .fa-brands {
+    font-size: 25px;
+    color: #ffffff;
+}
+.service .service-item .service-item-inner h4{
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.service .service-item .service-item-inner p{
+    font-size: 16px;
+    color: var(--text-black-700);
+    line-height: 25px;
+}
+.telejson .container{
+    padding-bottom: 40px;
+}
+.telejson .telejson-heading{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+.tp-search{
+    border-radius: 8px;
+    height: 30px;
+    width: 300px;
+    padding: 0 8px;
+}
+.telejson .telejson-heading h2,h3{
+    color: var(--text-black-900);
+    /* font-weight: 500; */
+}
+.telejson .telejson-item{
+    flex: 0 0 8.3%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.overflow-auto{
+    width: 100%;
+    height: 285px;
+    overflow: auto;
+    overflow-x: hidden;
+    border: 1px solid #000;
+    padding: 5px 10px;
+}
+
+.telejson .telejson-item h4{
+    text-align: center;
+}
+.telejson .telejson-item-inner{
+    border: 6px solid var(--bg-black-100);
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.telejson .telejson-item-inner .telejson-img img{
+    width: 100%;
+    display: block;
+    background-color: #747474;
+}
+
+/* img[title]::after {
+    content: attr(title); /* Sử dụng nội dung của thuộc tính title.
+    background-color: red;
+    color: #fff;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    /* Các thuộc tính CSS khác để tùy chỉnh vị trí và giao diện của tooltip.
+} */
+/* .contact{
+    overflow: hidden;
+} */
+.contact-title{
+    color: var(--skin-color);
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.contact-sub-title{
+    color: var(--text-black-900);
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+.contact .contact-info-item{
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+    margin-bottom: 44px;
+}
+.contact .contact-info-item .icon{
+    display: inline-block;
+}
+.contact .contact-info-item .icon .fa-solid,
+.contact .contact-info-item .icon .fa-brands{
+    font-size: 25px;
+    color: var(--skin-color);
+}
+.contact .contact-info-item h4{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+    margin: 15px 0 5px;
+}
+.contact .contact-info-item p{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+    font-weight: 400;
+}
+.contact .contact-form{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.contact .contact-form .col-6{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.contact .contact-form .col-12{
+    flex: 0 0 100%;
+    max-width: 1000%;
+}
+.contact .contact-form .form-item{
+    margin-bottom: 30px;
+}
+.contact .contact-form .form-item .form-control{
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    padding: 10px 25px;
+    font-size: 16px;
+    color: var(--text-black-700);
+    transition: all 0.3s ease;
+}
+.contact .contact-form .form-item .form-control:focus{
+    box-shadow: 0 0 20px rgba(48,46,77,0.15);
+}
+.contact .contact-form .form-item textarea.form-control{
+    height: 140px;
+}
+.contact .contact-form .btn{
+    height: 50px;
+    padding: 0 50px;
+}
+#audio-player {
+    display: none; /* Ẩn trình phát âm thanh */
   }
 @media (max-width:1199px){
     .section .container{
