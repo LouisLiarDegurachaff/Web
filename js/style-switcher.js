@@ -36,10 +36,17 @@ window.addEventListener('load', () => {
 })
 //BGM
 const audioToggle = document.querySelector(".bgm-toggler");
-document.getElementById('myAudio').play();
-document.querySelector("#myAudio").volume = 0.5;
+document.querySelector("#myAudio").volume = 0.25;
 audioToggle.addEventListener('click', () => {
     audioToggle.querySelector("i").classList.toggle("fa-volume-up");
     audioToggle.querySelector("i").classList.toggle("fa-volume-off");
+
     document.querySelector("#myAudio").paused ? document.querySelector("#myAudio").play() : document.querySelector("#myAudio").pause();
 });
+// Mở nhạc sau khi web load
+document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() {
+      document.querySelector("#myAudio").play();
+    }, 100);
+});
+  
