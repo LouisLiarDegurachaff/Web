@@ -148,6 +148,9 @@
         <div class="day-night s-icon">
             <i class="fas fa-moon fa-spin"></i>
         </div>
+        <div class="bgm-toggler s-icon">
+            <i class="fa fa-volume-up"></i>
+        </div>
         <h4>Màu chủ đề</h4>
         <div class="colors">
             <span class="color-1" onclick="setActiveStyle('color-1')"></span>
@@ -158,27 +161,11 @@
         </div>
     </div>
 
-    <div id="audio-player">  
-        <audio autoplay loop id="myBGM">
+    <div class="bgm-toggler">  
+        <audio autoplay loop id="myAudio">
             <source src="audio/pits.mp3" type="audio/mp3">
         </audio>
     </div> 
-
-    <script>
-        const bgm = document.getElementById('myBGM');
-        bgm.volume = 0.2;
-    </script>
-
-    <div id="fb-root"></div>
-
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "104199102644465");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
 
     <!-- Your SDK code -->
     <script>

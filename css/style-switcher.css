@@ -38,6 +38,9 @@
 .style-switcher .day-night{
     top: 55px;
 }
+.style-switcher .bgm-toggler{
+    top: 110px;
+}
 .style-switcher h4{
     margin: 0 0 10px;
     color: var(--text-black-700);

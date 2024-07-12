@@ -34,3 +34,11 @@ window.addEventListener('load', () => {
         dayNight.querySelector("i").classList.add("fa-moon");
     }
 })
+//BGM
+const audioToggle = document.querySelector(".bgm-toggler");
+document.querySelector("#myAudio").volume = 0.5;
+audioToggle.addEventListener('click', () => {
+    audioToggle.querySelector("i").classList.toggle("fa-volume-up");
+    audioToggle.querySelector("i").classList.toggle("fa-volume-off");
+    document.querySelector("#myAudio").paused ? document.querySelector("#myAudio").play() : document.querySelector("#myAudio").pause();
+});
