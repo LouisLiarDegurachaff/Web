@@ -3,5 +3,127 @@
 <head>
 </head>
 <body>
+      <div class="main-container">
+        <div class="aside">
+            <div class="logo">
+                <a href="index.html">LOUIS<span></span></a>
+            </div>
+            <div class="nav-together">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <!--Thêm Menu-->
+                <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about" class="disabled"><i class="fa fa-user"></i>About</a></li>
+                <!--<li><a href="#"><i class="disabled"></i class=""> </a></li>-->
+
+            </ul>
+        </div>
+        <div class="main-container">
+            <!--Home-->
+            <section class="home active section" id="home">
+                    <!--Chữ chạy-->
+                    <marquee class="marquee">Chào mừng đến trang web của Louis</marquee>
+                    <!--Thông Tin-->
+                    <div class="container">
+                        <div class="row">
+                            <div class="home-info padd-15">
+                                <!--Text-->
+                                <h3 class="hello">Yo, <span class="name">Louis desu</span></h3>
+                                <h3 class="my-profession">Chào bạn! <br>Tôi là một <span class="typing"></span></h3>
+                                <p></p>
+                                <a href="https://discord.gg/eVXYstExsN" target="_blank" data-section-index="5" class="btn hire-me">Discord Server</a>
+                            
+                            </div>
+                            <!--Hình-->
+                            <div class="home-img padd-15">
+                                <img src="images/Home Img.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <!--About-->
+            <section class="about section" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Thông Tin</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <h3>Tôi là một <span>con nghiện Gacha</span></h3>
+                                    <p>Hiện tại chỉ muốn một cuộc sống yên bình một mình.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="personal-info padd-15">
+                                    <div class="row">
+                                        <div class="info-item padd-15">
+                                            <p>Tên: <span>P.N Phuc Nguyen</span></p> 
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Sở Thích: <span>Anime | Manga | Light Novel | Music</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Sinh Nhật: <span>29/8</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Game <i class="fa-solid fa-heart"></i>: 
+                                                    <span><a href="https://genshin.hoyoverse.com/vi/home" target="_blank">Genshin Impact</a></span> | 
+                                                    <span><a href="https://hsr.hoyoverse.com/vi/home" target="_blank">Honkai Star Rail</a></span> | 
+                                                    <span><a href="https://zenless.hoyoverse.com/vi/home" target="_blank">Zenless Zone Zero</a></span> | 
+                                                    <span><a href="https://wutheringwaves.kurogames.com/en" target="_blank">Wuthering Wave</a></span>
+                                            </p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Giới Tính: <span>Nam</span></p>
+                                        </div>                                       
+                                        <div class="info-item padd-15">
+                                            <p>Quê Quán: <span>An Giang</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="iframe">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/0wKjue_NAzI?si=oS5GxdAtDDoKGljE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>                                    
+                                </div>
+                                <div class="skills padd-15">
+                                    <div class="row">
+                                        <h1 style="color: white; ">Discord Server</h1>
+                                        <iframe src="https://discord.com/widget?id=1136875766420869130&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas fa-moon fa-spin"></i>
+        </div>
+        <h4>Màu chủ đề</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>            
+        </div>
+    </div>
+
+    <div id="audio-player">
+        <audio autoplay loop volume="0.2">
+          <source src="./audio/kobasolo.mp3" type="audio/mp3">
+        </audio>
+    </div>
 </body>
 </html>
