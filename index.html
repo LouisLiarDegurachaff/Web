@@ -159,10 +159,15 @@
     </div>
 
     <div id="audio-player">
-        <audio autoplay loop>
+        <audio id="myAudio" autoplay loop>
             <source src="audio/pits.mp3" type="audio/mp3">
         </audio>
     </div>
+    
+    <script>
+        const audio = document.getElementById('myAudio');
+        audio.volume = 0.2;
+    </script>
 
     <div id="fb-root"></div>
 
