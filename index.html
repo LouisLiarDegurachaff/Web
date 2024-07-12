@@ -159,11 +159,15 @@
     </div>
 
     <div id="audio-player">
-        <audio autoplay loop volume="0.2">
+        <audio id="myAudio" autoplay loop>
           <source src="audio/pits.mp3" type="audio/mp3">
         </audio>
-    </div>
-
+    </div>     
+    <script>
+        const audio = document.getElementById('myAudio');
+        audio.volume = 0.1; // hạ âm lượng 20%
+    </script>
+    
     <div id="fb-root"></div>
 
     <div id="fb-customer-chat" class="fb-customerchat">
