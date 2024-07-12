@@ -159,14 +159,14 @@
     </div>
 
     <div id="audio-player">  
-        <audio autoplay loop id="myBGM">
+        <audio controls autoplay loop volume="0.2" id="myBGM">
             <source src="audio/pits.mp3" type="audio/mp3">
         </audio>
     </div> 
-    
+
     <script>
         const bgm = document.getElementById('myBGM');
-        bgm.volume = 0.30;
+        bgm.volume = 0.2;
     </script>
 
     <div id="fb-root"></div>
