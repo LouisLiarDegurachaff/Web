@@ -47,6 +47,6 @@ audioToggle.addEventListener('click', () => {
 document.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() {
       document.querySelector("#myAudio").play();
-    }, 100);
+    }, 1000);
 });
   
