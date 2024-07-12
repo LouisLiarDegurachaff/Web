@@ -43,4 +43,3 @@ audioToggle.addEventListener('click', () => {
 
     document.querySelector("#myAudio").paused ? document.querySelector("#myAudio").play() : document.querySelector("#myAudio").pause();
 });
-  
