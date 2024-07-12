@@ -36,6 +36,7 @@ window.addEventListener('load', () => {
 })
 //BGM
 const audioToggle = document.querySelector(".bgm-toggler");
+document.getElementById('myAudio').play();
 document.querySelector("#myAudio").volume = 0.5;
 audioToggle.addEventListener('click', () => {
     audioToggle.querySelector("i").classList.toggle("fa-volume-up");
