@@ -629,9 +629,6 @@ h3.my-profession{
     z-index: 1;
     /* Các thuộc tính CSS khác để tùy chỉnh vị trí và giao diện của tooltip.
 } */
-#audio-player {
- /* Ẩn trình phát âm thanh */
-}
 @media (max-width:1199px){
     .section .container{
         padding-top: 70px;
