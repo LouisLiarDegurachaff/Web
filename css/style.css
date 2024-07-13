@@ -539,6 +539,87 @@ h3.my-profession{
     border: none;
     margin-top: 20px;
 }
+/* services */
+.service .container{
+    padding-bottom: 40px;
+}
+.service .service-item{
+    margin-bottom: 30px;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+.service .service-item .service-item-inner{
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    padding: 30px 15px;
+    text-align: center;
+    transition: all 0.3S ease;
+}
+.service .service-item .service-item-inner p{
+    text-align: left;
+}
+.service .service-item .service-item-inner:hover{
+    box-shadow: 0 0 20px rgba(48,46,77,0.15);
+}
+.service .service-item .service-item-inner .icon{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.service .service-item .service-item-inner .iconnf img{
+    width: 40px;
+    height: 40px;
+    margin-top: 12px;
+}
+
+.service .service-item .service-item-inner .icon .fa-regular,
+.service .service-item .service-item-inner .icon .fa-solid,
+.service .service-item .service-item-inner .icon .fa-brands {
+    font-size: 40px;
+    line-height: 60px;
+    color: var(--skin-color);
+    transition: all 0.3S ease;
+}
+.service .service-item .service-item-inner:hover .icon{
+    background: var(--skin-color);
+}
+
+.service .service-item .service-item-inner:hover .icon .fa-regular,
+.service .service-item .service-item-inner:hover .icon .fa-solid,
+.service .service-item .service-item-inner:hover .icon .fa-brands {
+    font-size: 25px;
+    color: #ffffff;
+}
+.service .service-item .service-item-inner h4{
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.service .service-item .service-item-inner p{
+    font-size: 16px;
+    color: var(--text-black-700);
+    line-height: 25px;
+}
+.telejson .container{
+    padding-bottom: 40px;
+}
+
+.overflow-auto{
+    width: 100%;
+    height: 285px;
+    overflow: auto;
+    overflow-x: hidden;
+    border: 1px solid #000;
+    padding: 5px 10px;
+}
+
 /* img[title]::after {
     content: attr(title); /* Sử dụng nội dung của thuộc tính title.
     background-color: red;
@@ -549,8 +630,8 @@ h3.my-profession{
     /* Các thuộc tính CSS khác để tùy chỉnh vị trí và giao diện của tooltip.
 } */
 #audio-player {
-    display: flex; /* Ẩn trình phát âm thanh */
-  }
+ /* Ẩn trình phát âm thanh */
+}
 @media (max-width:1199px){
     .section .container{
         padding-top: 70px;
@@ -580,6 +661,12 @@ h3.my-profession{
     }
 }
 @media (max-width:991px){
+    .contact .contact-info-item,
+    .telejson .telejson-item,
+    .service .service-item{
+        flex: 0 0 20%;
+        max-width: 50%;
+    }
     .home .home-info{
         flex: 0 0 100%;
         max-width: 100%;
@@ -589,11 +676,19 @@ h3.my-profession{
     }
 }
 @media (max-width:767px){
+    .contact .contact-form .col-6,
+    .contact .contact-info-item,
+    .telejson .telejson-item,
+    .service .service-item,
     .about .about-content .experience,
     .about .about-content .education,
     .about .about-content .skills,
     .about .about-content .personal-info{
         flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .telejson .telejson-item{
+        flex: 0 0 20%;
         max-width: 100%;
     }
 }
