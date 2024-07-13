@@ -1,3 +1,4 @@
+
 // typing
 var typed = new Typed('.typing', {
     strings:["Freelancer", "Hikikomori", "Neet", "Fan Anime", "Con Nghiện Gacha"],
